@@ -2,7 +2,7 @@
 
 use Inertia\Inertia;
 
-Route::middleware(['auth'])->prefix('admin')->group(function () {
+Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::get('/', fn() => Inertia::render('Dashboard'))->name('admin.dashboard');
 
     /*Route::resource('users', AdminUserController::class);
