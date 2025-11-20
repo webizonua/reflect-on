@@ -1,6 +1,6 @@
 <template>
   <n-drawer
-      v-model:show="sidebar.mobileOpen"
+      v-model:show="adminUI.mobileOpen"
       width="260"
       placement="left"
   >
@@ -11,8 +11,8 @@
 </template>
 
 <script setup>
-import { useAdminSidebar } from '@/stores/adminSidebar'
+import { useAdminUI } from '@/stores/adminUI'
 import AdminSidebar from './AdminSidebar.vue'
 
-const sidebar = useAdminSidebar()
+const adminUI = useAdminUI()
 </script>

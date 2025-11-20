@@ -31,6 +31,7 @@
                 <label class="form-label">Slug</label>
                 <n-input
                     v-model:value="form.slug"
+                    :disabled="form.slug === 'home'"
                 />
                 <Error :message="form.errors.slug" />
               </div>
@@ -83,11 +84,7 @@
           <!-- Content (HTML) — на всю ширину -->
           <div>
             <label class="form-label">Content (HTML)</label>
-            <n-input
-                type="textarea"
-                :autosize="{ minRows: 6, maxRows: 20 }"
-                v-model:value="form.content"
-            />
+            <Editor v-model="form.content" />
             <Error :message="form.errors.content" />
           </div>
 
@@ -116,6 +113,7 @@ import AdminLayout from '@/admin/layouts/AdminLayout.vue'
 import Error from '@/admin/components/Error.vue'
 import { useForm, usePage } from '@inertiajs/vue3'
 import { useCrudNotifications } from '@/admin/composables/useCrudNotifications'
+import Editor from '@/admin/components/Editor.vue'
 
 const page = usePage().props.page
 

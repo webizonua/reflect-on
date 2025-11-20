@@ -19,7 +19,7 @@
 
     <!-- КНОПКА СВЕРНУТЬ -->
     <button
-        @click="sidebar.toggle()"
+        @click="adminUI.toggle()"
         class="border-t py-3 text-brand-purple border-gray-200 hover:text-black transition flex items-center justify-center"
     >
       <ChevronLeft v-if="!collapsed" />
@@ -33,11 +33,11 @@
 import { h } from 'vue'
 import { usePage, router } from '@inertiajs/vue3'
 import { LayoutDashboard, Users, Settings, ChevronLeft, ChevronRight, FileText } from 'lucide-vue-next'
-import { useAdminSidebar } from '@/stores/adminSidebar'
+import { useAdminUI } from '@/stores/adminUI'
 import {storeToRefs} from "pinia";
-const sidebar = useAdminSidebar()
+const adminUI = useAdminUI()
 
-const { collapsed } = storeToRefs(sidebar)
+const { collapsed } = storeToRefs(adminUI)
 
 const navigate = (route) => router.visit(route)
 

@@ -4,7 +4,7 @@
     <!-- MOBILE BURGER -->
     <button
         class="md:hidden hover:text-brand-purple transition text-gray-400"
-        @click="sidebar.openMobile"
+        @click="adminUI.openMobile"
     >
       <Menu size="26" />
     </button>
@@ -59,6 +59,7 @@
 
       <!-- Link: Logout -->
       <form method="POST" action="/logout">
+        <input type="hidden" name="_token" :value="csrf">
         <button
             type="submit"
             class="flex items-center gap-1 hover:text-red-600 transition text-gray-400"
@@ -76,10 +77,11 @@
 <script setup>
 import { Menu, Home, Globe, LogOut } from 'lucide-vue-next'
 import { NIcon } from 'naive-ui'
-import { useAdminSidebar } from '@/stores/adminSidebar'
+import { useAdminUI } from '@/stores/adminUI'
 import { useBreadcrumbs } from '@/admin/composables/useBreadcrumbs'
 
-const sidebar = useAdminSidebar()
+const adminUI = useAdminUI()
 const { crumbs } = useBreadcrumbs()
+const csrf = document.querySelector('meta[name="csrf-token"]').content
 </script>
 

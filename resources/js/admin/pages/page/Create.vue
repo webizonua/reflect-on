@@ -88,12 +88,7 @@
           <!-- Content (HTML) — на всю ширину -->
           <div>
             <label class="form-label">Content (HTML)</label>
-            <n-input
-                type="textarea"
-                :autosize="{ minRows: 6, maxRows: 20 }"
-                v-model:value="form.content"
-                placeholder="HTML content will be here (later GrapesJS)"
-            />
+            <Editor v-model="form.content" />
             <Error :message="form.errors.content" />
           </div>
 
@@ -121,6 +116,7 @@ import AdminLayout from '@/admin/layouts/AdminLayout.vue'
 import { useForm } from '@inertiajs/vue3'
 import Error from '@/admin/components/Error.vue'
 import { useCrudNotifications } from '@/admin/composables/useCrudNotifications'
+import Editor from '@/admin/components/Editor.vue'
 
 const form = useForm({
   name: '',

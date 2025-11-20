@@ -9,3 +9,7 @@ Route::middleware(['auth', 'admin'])
         Route::resource('pages', \App\Http\Controllers\Admin\PageController::class);
         Route::get('/', fn() => Inertia::render('Dashboard'))->name('dashboard');
     });
+
+Route::post('/admin/media/upload', [\App\Http\Controllers\Admin\MediaController::class, 'upload'])
+    ->middleware(['auth', 'admin'])
+    ->name('admin.media.upload');
