@@ -1,30 +1,40 @@
 <script setup>
-import AuthenticatedLayout from '@/layouts/AuthenticatedLayout.vue';
-import { Head } from '@inertiajs/vue3';
+import AdminLayout from '@/admin/layouts/AdminLayout.vue'
 </script>
 
 <template>
-    <Head title="Dashboard" />
+  <AdminLayout>
+    <h1 class="text-2xl font-bold mb-4">Dashboard</h1>
 
-    <AuthenticatedLayout>
-        <template #header>
-            <h2
-                class="text-xl font-semibold leading-tight text-gray-800"
-            >
-                Dashboard
-            </h2>
-        </template>
+    <n-grid :cols="4" :x-gap="24" :y-gap="24">
+      <n-gi>
+        <n-card>
+          <h2 class="text-lg font-semibold mb-2">Users</h2>
+          <p class="text-gray-500">34 registered users</p>
+        </n-card>
+      </n-gi>
 
-        <div class="py-12">
-            <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div
-                    class="overflow-hidden bg-white shadow-sm sm:rounded-lg"
-                >
-                    <div class="p-6 text-gray-900">
-                        Admin You're logged in!
-                    </div>
-                </div>
-            </div>
-        </div>
-    </AuthenticatedLayout>
+      <n-gi>
+        <n-card>
+          <h2 class="text-lg font-semibold mb-2">Posts</h2>
+          <p class="text-gray-500">12 blog posts</p>
+        </n-card>
+      </n-gi>
+
+      <n-gi>
+        <n-card>
+          <h2 class="text-lg font-semibold mb-2">Orders</h2>
+          <p class="text-gray-500">5 active orders</p>
+        </n-card>
+      </n-gi>
+
+      <n-gi>
+        <n-card>
+          <h2 class="text-lg font-semibold mb-2">Revenue</h2>
+          <p class="text-gray-500">$4,320 today</p>
+        </n-card>
+      </n-gi>
+
+    </n-grid>
+  </AdminLayout>
 </template>
