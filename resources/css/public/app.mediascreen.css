@@ -60,6 +60,10 @@
   .page-content__title {font-size: 27px;}
   .page-content__text {margin-top: 30px;}
   .page-content__text p+p {margin-top: 30px;}
+  .page-content h1{font-size:40px}
+  .page-content h2{font-size:27px}
+  .page-content h3{font-size:22px}
+  .page-content p+p{margin-top:20px}
   .contact-form {padding: 100px 0; margin-top:80px;}
   .contact-form__form { gap:30px;}
   .contact-form__group { gap: 7px;}
@@ -150,6 +154,10 @@
   .page-content__title {font-size: 24px;}
   .page-content__text {margin-top: 20px;}
   .page-content__text p+p {margin-top: 20px;}
+  .page-content h1{font-size:36px}
+  .page-content h2{font-size:24px}
+  .page-content h3{font-size:20px}
+  .page-content p{font-size:17px}
   .contact-form {padding: 80px 0; margin-top: 50px;}
   .contact-form__textarea {height: 300px;}
 }
@@ -268,6 +276,9 @@
   .page-content__container {max-width: 90%;}
   .page-hero__title {font-size: 32px;}
   .page-content__title {font-size: 22px;}
+  .page-content h1{font-size:32px}
+  .page-content h2{font-size:22px}
+  .page-content h3{font-size:20px}
   .contact-form {padding: 50px 0;}
   .contact-form__form {max-width: 86%;}
   .contact-form__textarea {height: 260px;}
@@ -303,6 +314,9 @@
   .faq__icon:after {width: 13px;height: 1px;}
   .faq__icon:before {width: 13px;height: 1px;top: 50%;}
   .mission__content { margin: 60px 0; max-width: 350px;}
+  .page-content h1{font-size:30px}
+  .page-content h2{font-size:22px}
+  .page-content p{font-size:16px}
 }
 @media screen and (max-width: 639px) { /* 480<width<639 main 480*/
   .button{padding:0 45px; font-size:17px; width: 100%;}
@@ -359,6 +373,8 @@
   .story__qual-item {width: 100%; }
   .page-content__container {max-width: 90%;}
   .page-hero__title {font-size: 30px;}
+  .page-content h1{font-size:28px}
+  .page-content h2{font-size:20px}
   .contact-form {padding: 30px 0;}
   .contact-form__form {max-width: 86%;}
   .contact-form__group {gap: 5px;}
@@ -403,5 +419,8 @@
   .mission__image {background: #8489B5;}
   .mission__image img {display: none;}
   .page-content__container {max-width: 100%;}
+  .page-content h1{font-size:24px}
+  .page-content h2{font-size:18px}
+  .page-content h3{font-size:18px}
   .contact-form__textarea {height: 200px;}
 }

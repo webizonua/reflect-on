@@ -317,6 +317,23 @@ a{color:#423B87; text-decoration:underline;}
 .contact-form__actions {display: flex; justify-content: flex-end;}
 .contact-form__submit {}
 
-
+.page-content{font-family:"Quicksand",sans-serif;color:#000;line-height:1.56}
+.page-content h1,.page-content h2,.page-content h3,.page-content h4,.page-content h5,.page-content h6{font-family:"Raleway",sans-serif;font-weight:500;color:#423B87;line-height:1.25;margin-bottom:25px}
+.page-content h1{font-size:44px}
+.page-content h2{font-size:31px}
+.page-content h3{font-size:24px;font-weight:500}
+.page-content h4{font-size:20px}
+.page-content h5{font-size:18px}
+.page-content h6{font-size:17px}
+.page-content p{margin-bottom:25px;font-size:18px}
+.page-content p+p{margin-top:25px}
+.page-content a{color:#423B87;text-decoration:underline}
+.page-content a:hover{text-decoration:none}
+.page-content ul,.page-content ol{margin:20px 0 25px 25px}
+.page-content ul{list-style:disc}
+.page-content ol{list-style:decimal}
+.page-content li{margin-bottom:10px;font-size:18px}
+.page-content blockquote{border-left:4px solid #423B87;padding-left:20px;margin:25px 0;font-family:Raleway;font-weight:500;font-size:22px;line-height:1.5;color:#423B87}
+.page-content img{max-width:100%;height:auto;border-radius:12px;display:block;margin:30px auto}
 
 
