@@ -20,6 +20,8 @@ return Application::configure(basePath: dirname(__DIR__))
             'admin' => \App\Http\Middleware\AdminMiddleware::class,
         ]);
 
+        $middleware->append(\App\Http\Middleware\HtmlMinifyMiddleware::class);
+
         //
     })
     ->withExceptions(function (Exceptions $exceptions): void {
