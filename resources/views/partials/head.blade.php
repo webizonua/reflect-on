@@ -1,9 +1,9 @@
 <head>
     <meta charset="UTF-8">
     <title>@yield('title')</title>
-    <meta name="description" content="@yield('meta_description')">
-    @hasSection('meta_keywords')
-        <meta name="keywords" content="@yield('meta_keywords')">
+    <meta name="description" content="@yield('description')">
+    @hasSection('keywords')
+        <meta name="keywords" content="@yield('keywords')">
     @endif
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
