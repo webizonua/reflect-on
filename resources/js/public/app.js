@@ -31,8 +31,10 @@ $(function () {
             lastScroll = current;
         }
     });
-    
-    $('.faq__question').on('click', function() {
+
+    $('.faq__answer').css({display: 'none', opacity: 0});
+
+    $('.faq__question').on('click', function () {
         const $item = $(this).closest('.faq__item');
         const $answer = $item.find('.faq__answer');
 

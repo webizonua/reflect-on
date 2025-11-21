@@ -266,7 +266,7 @@ a{color:#423B87; text-decoration:underline;}
 .faq__icon:before {content: ""; display: block; width: 17px; height: 2px; transform: rotate(90deg); background:#5E58A3; position: absolute; top: calc(50% - 1px);}
 .faq__item.active .faq__icon:before {opacity: 0;}
 .faq__item.active .faq__icon {transform: rotate(180deg);}
-.faq__answer {display: none;opacity:0;}
+.faq__answer {}
 .faq__item.active .faq__answer {opacity:1;}
 .faq__answer a {color:#423B87; text-decoration: underline;}
 .faq__answer a:hover {text-decoration: none;}
