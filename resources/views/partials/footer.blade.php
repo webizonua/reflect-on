@@ -6,7 +6,7 @@
                     <li class="nav__item"><a href="/online-kurs" class="nav__link">Online-Kurs</a></li>
                     <li class="nav__item"><a href="/mein-angebot" class="nav__link">Mein Angebot</a></li>
                     <li class="nav__item"><a href="/uber-mich" class="nav__link">Über mich</a></li>
-                    <li class="nav__item"><a href="/blog" class="nav__link">Blog</a></li>
+                    {{--<li class="nav__item"><a href="/blog" class="nav__link">Blog</a></li>--}}
                     <li class="nav__item"><a href="/kontakt" class="nav__link">Kontakt</a></li>
                 </ul>
             </nav>

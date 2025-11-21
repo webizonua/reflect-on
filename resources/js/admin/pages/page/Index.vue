@@ -112,9 +112,8 @@
   </AdminLayout>
 </template>
 
-
-
 <script setup>
+import { computed } from 'vue'
 import AdminLayout from '@/admin/layouts/AdminLayout.vue'
 import Pagination from '@/admin/components/Pagination.vue'
 import { router, usePage } from '@inertiajs/vue3'
@@ -122,7 +121,7 @@ import { NButton, useDialog, useNotification } from 'naive-ui'
 import { Edit as EditIcon, Trash2 } from 'lucide-vue-next'
 import { NIcon } from 'naive-ui'
 
-const pages = usePage().props.pages
+const pages = computed(() => usePage().props.pages)
 const dialog = useDialog()
 const notification = useNotification()
 
@@ -152,11 +151,11 @@ const confirmDelete = (id) => {
       type: 'error'
     },
     onPositiveClick: () => {
-
       router.delete(
           route('admin.pages.destroy', id),
           {
             onSuccess: () => {
+              router.reload({ only: ['pages'] })
               notification.success({
                 title: 'Deleted',
                 description: 'Page was successfully removed.',

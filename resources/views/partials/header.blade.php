@@ -9,7 +9,7 @@
             <ul class="nav__list">
                 <li><a href="/online-kurs" class="nav__link {{ request()->is('online-kurs') ? 'nav__link--current' : '' }}">Online-Kurs</a></li>
                 <li><a href="/mein-angebot" class="nav__link {{ request()->is('mein-angebot') ? 'nav__link--current' : '' }}">Mein Angebot</a></li>
-                <li><a href="/ueber-mich" class="nav__link {{ request()->is('ueber-mich') ? 'nav__link--current' : '' }}">Über mich</a></li>
+                <li><a href="/uber-mich" class="nav__link {{ request()->is('uber-mich') ? 'nav__link--current' : '' }}">Über mich</a></li>
                 {{--<li><a href="/blog" class="nav__link {{ request()->is('blog*') ? 'nav__link--current' : '' }}">Blog</a></li>--}}
                 <li><a href="/kontakt" class="nav__link {{ request()->is('kontakt') ? 'nav__link--current' : '' }}">Kontakt</a></li>
             </ul>

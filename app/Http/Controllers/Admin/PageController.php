@@ -16,7 +16,7 @@ class PageController extends Controller
     {
         return Inertia::render('page/Index', [
             'title' => 'Pages',
-            'pages' => Page::orderBy('created_at', 'desc')->paginate(20)
+            'pages' => Page::orderBy('created_at', 'asc')->paginate(20)
         ]);
     }
 
